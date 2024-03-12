@@ -2,6 +2,8 @@
 
 from sys import argv
 import pytesseract
+import os
+os.environ["LD_LIBRARY_PATH"] = os.path.join(os.path.dirname(__file__), "libs")
 
 
 def main():
